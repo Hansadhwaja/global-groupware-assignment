@@ -4,6 +4,8 @@ import back from '../assets/back.png'
 import { ToastContainer } from 'react-toastify';
 import { AuthContext } from '../context/AppContext';
 import Loading from './Loading';
+import { useNavigate } from 'react-router-dom';
+import Login from './Login';
 
 
 
@@ -13,7 +15,7 @@ const UserList = () => {
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
-  const { handleError, handleSuccess } = useContext(AuthContext);
+  const { handleError, handleSuccess,isLogin } = useContext(AuthContext);
   const [formData, setFormData] = useState({
     email: '',
     first_name: '',
@@ -119,6 +121,8 @@ const UserList = () => {
   };
 
   if (users.length < 0) return <Loading />;
+  if(!isLogin) return <Login />;
+  
 
 
   return (

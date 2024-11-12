@@ -36,7 +36,7 @@ This is a user management application built with **React** and **Tailwind CSS**,
 
 1. Clone this repository:
     ```bash
-    git clone https://github.com/Hansadhwaja/mangojelly-backend.git
+    git clone https://github.com/Hansadhwaja/global-groupware-assignment.git
     ```
 
 
@@ -65,5 +65,5 @@ This is a user management application built with **React** and **Tailwind CSS**,
 
 ### Project URL
  ```bash
-    Live Hosted URL 
-    ```
+    Live Hosted URL https://global-groupware-assignment.vercel.app
+ ```
